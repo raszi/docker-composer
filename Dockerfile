@@ -1,7 +1,7 @@
 FROM composer:2
 
 RUN apk add --no-cache --virtual .extension-run-deps \
-     libmemcached-libs
+    libmemcached-libs
 
 RUN apk add --no-cache --virtual .extension-build-deps \
     $PHPIZE_DEPS \
