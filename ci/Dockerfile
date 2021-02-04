@@ -3,15 +3,17 @@ FROM ikaraszi/composer:php-7.4
 RUN apk add --no-cache --virtual .extension-run-deps \
     icu-libs \
     libpng \
-    libmemcached-libs
+    libmemcached-libs \
+    libzip
 
 RUN apk add --no-cache --virtual .extension-build-deps \
     $PHPIZE_DEPS \
     icu-dev \
     libpng-dev \
     libmemcached-dev \
+    libzip-dev \
     zlib-dev && \
-    docker-php-ext-install gd intl mysqli pdo_mysql && \
+    docker-php-ext-install gd intl mysqli pdo_mysql zip && \
     pecl install memcached && \
     docker-php-ext-enable memcached && \
     pecl install redis && \
