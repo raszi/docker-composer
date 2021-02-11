@@ -22,3 +22,6 @@ RUN apk add --no-cache --virtual .extension-build-deps \
     docker-php-ext-enable xdebug && \
     rm -rf /tmp/* && \
     apk del .extension-build-deps
+
+RUN curl -o /usr/local/bin/wait-for "https://raw.githubusercontent.com/eficode/wait-for/v2.0.0/wait-for" && \
+    chmod +x /usr/local/bin/wait-for
