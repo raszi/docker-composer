@@ -5,19 +5,20 @@
 
 ## Supported tags and respective Dockerfile links
 
-| Tag                | Base               | Features                                                               | Image size                                         |
-| ------------------ | ------------------ | ---------------------------------------------------------------------- | -------------------------------------------------- |
-| [`latest`]         | [`composer:2`]     | memcached, xdebug                                                      | ![Docker Image Size (tag)][shields-latest]         |
-| [`ci`]             | [`php:7.4-alpine`] | gd, intl, mysqli, pdo_mysql, memcached, redis, xdebug, zip, [wait-for] | ![Docker Image Size (tag)][shields-ci]             |
-| [`docker-compose`] | [`composer:2`]     | memcached, xdebug, docker-compose                                      | ![Docker Image Size (tag)][shields-docker-compose] |
-| [`php-7.4`]        | [`php:7.4-alpine`] |                                                                        | ![Docker Image Size (tag)][shields-php-7.4]        |
+| Tag                                    | Base                           | Features                                                               | Image size                                         |
+| -------------------------------------- | ------------------------------ | ---------------------------------------------------------------------- | -------------------------------------------------- |
+| [`latest`][latest-tag]                 | [`composer:2`][composer-image] | memcached, xdebug                                                      | ![Docker Image Size (tag)][shields-latest]         |
+| [`ci`][ci-tag]                         | [`php:7.4-alpine`][php-image]  | gd, intl, mysqli, pdo_mysql, memcached, redis, xdebug, zip, [wait-for] | ![Docker Image Size (tag)][shields-ci]             |
+| [`docker-compose`][docker-compose-tag] | [`composer:2`][composer-image] | memcached, xdebug, [docker-compose]                                    | ![Docker Image Size (tag)][shields-docker-compose] |
+| [`php-7.4`][php-7.4-tag]               | [`php:7.4-alpine`][php-image]  |                                                                        | ![Docker Image Size (tag)][shields-php-7.4]        |
 
-[latest]: https://github.com/raszi/docker-composer/blob/master/Dockerfile
-[ci]: https://github.com/raszi/docker-composer/blob/master/ci/Dockerfile
-[docker-compose]: https://github.com/raszi/docker-composer/blob/master/docker-compose/Dockerfile
-[php-7.4]: https://github.com/raszi/docker-composer/blob/master/php-7.4/Dockerfile
-[composer:2]: https://hub.docker.com/_/composer
-[php:7.4-alpine]: https://hub.docker.com/_/php
+[latest-tag]: https://github.com/raszi/docker-composer/blob/master/Dockerfile
+[ci-tag]: https://github.com/raszi/docker-composer/blob/master/ci/Dockerfile
+[docker-compose-tag]: https://github.com/raszi/docker-composer/blob/master/docker-compose/Dockerfile
+[php-7.4-tag]: https://github.com/raszi/docker-composer/blob/master/php-7.4/Dockerfile
+[composer-image]: https://hub.docker.com/_/composer
+[php-image]: https://hub.docker.com/_/php
+[docker-compose]: https://docs.docker.com/compose/
 [shields-latest]: https://img.shields.io/docker/image-size/ikaraszi/composer/latest
 [shields-ci]: https://img.shields.io/docker/image-size/ikaraszi/composer/ci
 [shields-docker-compose]: https://img.shields.io/docker/image-size/ikaraszi/composer/docker-compose
