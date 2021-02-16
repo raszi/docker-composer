@@ -2,14 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
-      container: hadolint/hadolint
+    container: hadolint/hadolint
 
     steps:
       - uses: actions/checkout@v2
