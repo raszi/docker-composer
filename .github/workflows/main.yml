@@ -1,0 +1,19 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+      container: hadolint/hadolint
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: hadolint
+        run: hadolint ./**/*Dockerfile
