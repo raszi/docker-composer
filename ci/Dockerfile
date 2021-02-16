@@ -6,8 +6,9 @@ RUN apk add --no-cache --virtual .extension-run-deps \
     libmemcached-libs \
     libzip
 
+# hadolint ignore=SC2086
 RUN apk add --no-cache --virtual .extension-build-deps \
-    "$PHPIZE_DEPS" \
+    $PHPIZE_DEPS \
     icu-dev \
     libpng-dev \
     libmemcached-dev \
