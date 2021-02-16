@@ -4,7 +4,7 @@ RUN apk add --no-cache --virtual .extension-run-deps \
     libmemcached-libs
 
 RUN apk add --no-cache --virtual .extension-build-deps \
-    $PHPIZE_DEPS \
+    "$PHPIZE_DEPS" \
     libmemcached-dev \
     zlib-dev && \
     pecl install memcached && \

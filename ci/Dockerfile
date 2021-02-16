@@ -7,7 +7,7 @@ RUN apk add --no-cache --virtual .extension-run-deps \
     libzip
 
 RUN apk add --no-cache --virtual .extension-build-deps \
-    $PHPIZE_DEPS \
+    "$PHPIZE_DEPS" \
     icu-dev \
     libpng-dev \
     libmemcached-dev \
