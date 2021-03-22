@@ -6,13 +6,13 @@
 
 ## Supported tags and respective Dockerfile links
 
-| Tag                                    | Base                           | Features                                                               | Image size                                         |
-| -------------------------------------- | ------------------------------ | ---------------------------------------------------------------------- | -------------------------------------------------- |
-| [`latest`][latest-tag]                 | [`composer:2`][composer-image] | memcached, xdebug                                                      | ![Docker Image Size (tag)][shields-latest]         |
-| [`ci`][ci-tag]                         | [`php:7.4-alpine`][php-image]  | gd, intl, mysqli, pdo_mysql, memcached, redis, xdebug, zip, [wait-for] | ![Docker Image Size (tag)][shields-ci]             |
-| [`docker-compose`][docker-compose-tag] | [`composer:2`][composer-image] | memcached, xdebug, [docker-compose]                                    | ![Docker Image Size (tag)][shields-docker-compose] |
-| [`fpm`][fpm-tag]                       | [`php:8-fpm`][php-image]       |                                                                        | ![Docker Image Size (tag)][shields-fpm]            |
-| [`php-7.4`][php-7.4-tag]               | [`php:7.4-alpine`][php-image]  |                                                                        | ![Docker Image Size (tag)][shields-php-7.4]        |
+| Tag                                    | Base                           | Features                                                                     | Image size                                         |
+| -------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------- |
+| [`latest`][latest-tag]                 | [`composer:2`][composer-image] | memcached, xdebug                                                            | ![Docker Image Size (tag)][shields-latest]         |
+| [`ci`][ci-tag]                         | [`php:7.4-alpine`][php-image]  | gd, intl, mysqli, pdo_mysql, memcached, redis, soap, xdebug, zip, [wait-for] | ![Docker Image Size (tag)][shields-ci]             |
+| [`docker-compose`][docker-compose-tag] | [`composer:2`][composer-image] | memcached, xdebug, [docker-compose]                                          | ![Docker Image Size (tag)][shields-docker-compose] |
+| [`fpm`][fpm-tag]                       | [`php:8-fpm`][php-image]       |                                                                              | ![Docker Image Size (tag)][shields-fpm]            |
+| [`php-7.4`][php-7.4-tag]               | [`php:7.4-alpine`][php-image]  |                                                                              | ![Docker Image Size (tag)][shields-php-7.4]        |
 
 [latest-tag]: https://github.com/raszi/docker-composer/blob/master/Dockerfile
 [ci-tag]: https://github.com/raszi/docker-composer/blob/master/ci/Dockerfile

@@ -4,6 +4,7 @@ RUN apk add --no-cache --virtual .extension-run-deps \
     icu-libs \
     libpng \
     libmemcached-libs \
+    libxml2 \
     libzip
 
 # hadolint ignore=SC2086
@@ -12,9 +13,10 @@ RUN apk add --no-cache --virtual .extension-build-deps \
     icu-dev \
     libpng-dev \
     libmemcached-dev \
+    libxml2-dev \
     libzip-dev \
     zlib-dev && \
-    docker-php-ext-install gd intl mysqli pdo_mysql zip && \
+    docker-php-ext-install gd intl mysqli pdo_mysql soap zip && \
     pecl install memcached && \
     docker-php-ext-enable memcached && \
     pecl install redis && \
