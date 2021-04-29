@@ -1,6 +1,6 @@
-FROM composer:2 AS composer
+FROM composer:2.0.13 AS composer
 
-FROM php:fpm-alpine
+FROM php:8.0.3-fpm-alpine
 
 WORKDIR /app
 
