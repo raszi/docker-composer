@@ -13,5 +13,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: hadolint
-        run: hadolint ./**/*Dockerfile
+      - uses: hadolint/hadolint-action@v1.4.0
+        with:
+          dockerfile: Dockerfile
+      - uses: hadolint/hadolint-action@v1.4.0
+        with:
+          dockerfile: ci/Dockerfile
+      - uses: hadolint/hadolint-action@v1.4.0
+        with:
+          dockerfile: docker-compose/Dockerfile
+      - uses: hadolint/hadolint-action@v1.4.0
+        with:
+          dockerfile: fpm/Dockerfile
+      - uses: hadolint/hadolint-action@v1.4.0
+        with:
+          dockerfile: php-7.4/Dockerfile
