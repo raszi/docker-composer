@@ -8,23 +8,25 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    container: hadolint/hadolint
-
     steps:
       - uses: actions/checkout@v2
       - uses: hadolint/hadolint-action@v1.4.0
+        name: "lint latest"
         with:
           dockerfile: Dockerfile
       - uses: hadolint/hadolint-action@v1.4.0
+        name: "lint ci"
         with:
           dockerfile: ci/Dockerfile
       - uses: hadolint/hadolint-action@v1.4.0
+        name: "lint docker-compose"
         with:
           dockerfile: docker-compose/Dockerfile
       - uses: hadolint/hadolint-action@v1.4.0
+        name: "lint fpm"
         with:
           dockerfile: fpm/Dockerfile
       - uses: hadolint/hadolint-action@v1.4.0
+        name: "lint php-7.4"
         with:
           dockerfile: php-7.4/Dockerfile
