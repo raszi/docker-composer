@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .extension-build-deps \
     libxml2-dev \
     libzip-dev \
     zlib-dev && \
-    docker-php-ext-install gd intl mysqli iconv pdo_mysql soap sockets zip && \
+    docker-php-ext-install gd intl mysqli iconv mbstring pdo_mysql soap sockets zip && \
     pecl install memcached && \
     docker-php-ext-enable memcached && \
     pecl install redis && \
