@@ -5,7 +5,8 @@ RUN apk add --no-cache --virtual .extension-run-deps \
     libpng \
     libmemcached-libs \
     libxml2 \
-    libzip
+    libzip \
+    oniguruma
 
 # hadolint ignore=SC2086
 RUN apk add --no-cache --virtual .extension-build-deps \
@@ -15,6 +16,7 @@ RUN apk add --no-cache --virtual .extension-build-deps \
     libmemcached-dev \
     libxml2-dev \
     libzip-dev \
+    oniguruma-dev \
     zlib-dev && \
     docker-php-ext-install gd intl mysqli iconv mbstring pdo_mysql soap sockets zip && \
     pecl install memcached && \
