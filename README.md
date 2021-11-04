@@ -1,6 +1,5 @@
 # Composer Docker Image
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/ikaraszi/composer)](https://hub.docker.com/r/ikaraszi/composer/builds)
 [![Docker pulls](https://img.shields.io/docker/pulls/ikaraszi/composer.svg)](https://hub.docker.com/r/ikaraszi/composer/)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/raszi/docker-composer/CI/master)
 
