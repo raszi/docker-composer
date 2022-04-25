@@ -1,4 +1,4 @@
-FROM composer:latest AS composer
+FROM composer:2.3.5 AS composer
 
 FROM php:8.0.3-fpm-alpine
 

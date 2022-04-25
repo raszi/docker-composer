@@ -1,4 +1,4 @@
-FROM composer:latest
+FROM composer:2.3.5
 
 RUN apk add --no-cache --virtual .extension-run-deps \
     libmemcached-libs
